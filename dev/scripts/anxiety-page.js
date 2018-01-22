@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./header";
 import Ventbox from "./ventbox";
 import Squarespace from "./squarespace";
+import Racingmind from "./racingmind";
 import {
     BrowserRouter as Router,
     Route, Link
@@ -19,6 +20,12 @@ export default class AnxietyPage extends React.Component {
                     <Header />
                     <Link to="/ventbox">ventbox</Link>
                     <Route exact path="/ventbox" component={Ventbox} />
+
+                    <Link to="/squarespace">Squarespace</Link>
+                    <Route exact path="/squarespace" component={Squarespace} />
+
+                    <Link to="/racingmind">Racing mind</Link>
+                    <Route exact path="/racingmind" component={Racingmind} />
                 </div>
         )
     }
