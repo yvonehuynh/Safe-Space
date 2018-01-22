@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header";
 
 const questionArray=[
     "Name 10 items that remind you of the beach",
@@ -29,6 +30,7 @@ export default class Racingmind extends React.Component {
     render(){
         return (
             <div>
+                <Header />
                 {randomQuestions()}
             </div>
         )

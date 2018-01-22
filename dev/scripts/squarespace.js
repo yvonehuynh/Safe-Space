@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header";
 
 export default class Squarespace extends React.Component {
     constructor(){
@@ -11,6 +12,7 @@ export default class Squarespace extends React.Component {
     render(){
         return (
             <div className="squarespace-container">
+            <Header />
                 <p>Click on each white square to turn it red.</p>
                 <div className="mini-square-container">
                     <div className="mini-square" onClick={this.changeColour}></div>

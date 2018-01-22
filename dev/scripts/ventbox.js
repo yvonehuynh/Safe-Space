@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header";
 
 export default class Ventbox extends React.Component {
     constructor(){
@@ -23,8 +24,9 @@ export default class Ventbox extends React.Component {
     render(){
         return (
             <div className="ventbox-container">
+            <Header />
                 <form action="" onSubmit={this.formSubmit}>
-                    <input type="text" name="ventbox" onChange={this.valueChange}/>
+                    <input type="text" name="ventbox" value={this.state.ventbox}onChange={this.valueChange}/>
                     <input type="submit"/>
                 </form>
             </div>
