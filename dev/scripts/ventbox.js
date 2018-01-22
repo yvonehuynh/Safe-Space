@@ -7,6 +7,7 @@ export default class Ventbox extends React.Component {
             ventbox: ""
         }
         this.formSubmit = this.formSubmit.bind(this)
+        this.valueChange = this.valueChange.bind(this)
     }
     formSubmit(e){
         e.preventDefault();
@@ -14,11 +15,16 @@ export default class Ventbox extends React.Component {
             ventbox: ""
         })
     }
+    valueChange(e){
+        this.setState({
+        [e.target.name]: e.target.value
+        })
+    }
     render(){
         return (
             <div className="ventbox-container">
                 <form action="" onSubmit={this.formSubmit}>
-                    <textarea name="ventbox" />
+                    <input type="text" name="ventbox" onChange={this.valueChange}/>
                     <input type="submit"/>
                 </form>
             </div>
