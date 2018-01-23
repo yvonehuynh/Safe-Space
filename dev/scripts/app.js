@@ -5,6 +5,8 @@ import AnxietyPage from "./anxiety-page";
 import Ventbox from "./ventbox";
 import Squarespace from "./squarespace";
 import Racingmind from "./racingmind";
+import AngerPage from "./anger";
+import Matter from "./matter";
 
 import {
   BrowserRouter as Router,
@@ -21,6 +23,8 @@ class App extends React.Component {
             <Route exact path="/" component={LandingPage} />
             <Route exact path="/squarespace" component={Squarespace} />
             <Route exact path="/racingmind" component={Racingmind} />
+            <Route exact path="/anger" component={AngerPage} />
+            <Route exact path="/matter" component={Matter} />
           </div>
         </Router>
       )

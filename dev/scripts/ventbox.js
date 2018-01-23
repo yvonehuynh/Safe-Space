@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import Homepage from "./homepage-button";
 
 export default class Ventbox extends React.Component {
     constructor(){
@@ -24,11 +25,12 @@ export default class Ventbox extends React.Component {
     render(){
         return (
             <div className="ventbox-container">
-            <Header />
+                <Header />
                 <form action="" onSubmit={this.formSubmit}>
                     <input type="text" name="ventbox" value={this.state.ventbox}onChange={this.valueChange}/>
-                    <input type="submit"/>
+                    <input type="submit" value="clear your mind"/>
                 </form>
+                <Homepage />
             </div>
         )
     }

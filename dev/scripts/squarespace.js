@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./header";
+import Homepage from "./homepage-button";
 
 export default class Squarespace extends React.Component {
     constructor(){
@@ -34,6 +35,7 @@ export default class Squarespace extends React.Component {
                     <div className="mini-square" onClick={this.changeColour}></div>
                     <div className="mini-square" onClick={this.changeColour}></div>
                 </div>
+                <Homepage />
             </div>
         )
     }

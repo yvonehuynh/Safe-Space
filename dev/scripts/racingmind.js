@@ -1,9 +1,15 @@
 import React from "react";
 import Header from "./header";
+import Homepage from "./homepage-button";
 
 const questionArray=[
     "Name 10 items that remind you of the beach",
     "Name 10 names that start with the letter R",
+    "Name 10 names that start with the letter A",
+    "Name 10 names that start with the letter C",
+    "Name 10 names that start with the letter D",
+    "Name 10 names that start with the letter E",
+    "Name 10 names that start with the letter J",
     "Name 10 animals that have stripes",
     "Can you name 4 types of fish, 3 types of mammels, and 3 types of wine?",
     "Can you name 10 things that don't belong in the fridge?",
@@ -32,6 +38,21 @@ export default class Racingmind extends React.Component {
             <div>
                 <Header />
                 {randomQuestions()}
+                <div className="input-container">
+                    <ol>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                        <li><input type="text"/></li>
+                    </ol>
+                </div>
+                <Homepage />
             </div>
         )
     }
