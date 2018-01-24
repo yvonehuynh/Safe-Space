@@ -27,7 +27,7 @@ export default class Ventbox extends React.Component {
             <div className="ventbox-container">
                 <Header />
                 <form action="" onSubmit={this.formSubmit}>
-                    <input type="text" name="ventbox" value={this.state.ventbox}onChange={this.valueChange}/>
+                    <input type="text" name="ventbox" value={this.state.ventbox} onChange={this.valueChange} autocomplete="off"/>
                     <input type="submit" value="clear your mind"/>
                 </form>
                 <Homepage />

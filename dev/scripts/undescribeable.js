@@ -7,6 +7,7 @@ import Matter from "./matter";
 import Breathe from "./breathe";
 import Homepage from "./homepage-button";
 import Header from "./header";
+import Accomplishments from "./accomplishments";
 
 import {
     BrowserRouter as Router,
@@ -37,6 +38,8 @@ export default class Undescribeable extends React.Component {
 
                 <Link to="/racingmind">Racing mind</Link>
                 <Route exact path="/racingmind" component={Racingmind} />
+                <Link to="/accomplishments">Accomplishments</Link>
+                <Route exact path="/accomplishments" component={Accomplishments} />
                 <Homepage />
             </div>
         )

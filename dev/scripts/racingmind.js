@@ -40,16 +40,16 @@ export default class Racingmind extends React.Component {
                 {randomQuestions()}
                 <div className="input-container">
                     <ol>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
-                        <li><input type="text"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
+                        <li><input type="text" autocomplete="off"/></li>
                     </ol>
                 </div>
                 <Homepage />
