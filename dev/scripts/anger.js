@@ -16,16 +16,41 @@ export default class AngerPage extends React.Component {
             <Header />
             <p>Choose which activity you would like to calm your anger</p>
                 
-            <Link to="/ventbox">ventbox</Link>
+            <div className="main-container">
+            <Link to="/ventbox">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        ventbox
+                    </h3>
+                </div>
             <Route exact path="/ventbox" component={Ventbox} />
+            </Link>
 
-            <Link to="/matter">Will It Matter?</Link>
+            <Link to="/matter">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        Will It Matter?
+                    </h3>
+                </div>
             <Route exact path="/matter" component={Matter} />
+            </Link>
 
-            <Link to="/breathe">Breathe</Link>
+            <Link to="/breathe">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                    Breathe
+                    </h3>
+                </div> 
             <Route exact path="/breathe" component={Breathe} />
-
-            <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">Whack-A-Hacker</a>
+            </Link>
+            <div className="main-directory-box">
+                <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">
+                    <h3 className="main-directory-link">
+                        Whack-A-Hacker
+                    </h3>
+                </a>
+            </div>
+            </div>
             <Homepage />
             </div>
         )

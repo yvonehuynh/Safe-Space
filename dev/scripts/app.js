@@ -14,6 +14,7 @@ import Accomplishments from "./accomplishments";
 import Videos from "./videos";
 import Dogs from "./dogs";
 import Cats from "./cats";
+import Affirmation from "./affirmation";
 
 import {
   BrowserRouter as Router,
@@ -39,6 +40,7 @@ class App extends React.Component {
             <Route exact path="/videos" component={Videos} />
             <Route exact path="/dogs" component={Dogs} />
             <Route exact path="/cats" component={Cats} />
+            <Route exact path="/quotes" component={Affirmation} />
           </div>
         </Router>
       )

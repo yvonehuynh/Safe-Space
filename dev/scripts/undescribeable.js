@@ -19,27 +19,78 @@ export default class Undescribeable extends React.Component {
         return (
             <div className="undescriabeable-container">
                 <Header />
-                <Link to="/ventbox">ventbox</Link>
+                <div className="main-container">
+                <Link to="/ventbox">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            ventbox
+                        </h3>
+                    </div>
+                    <Route exact path="/ventbox" component={Ventbox} />
+                </Link>
+
+                <Link to="/matter">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            Will It Matter?
+                        </h3>
+                    </div>
+                    <Route exact path="/matter" component={Matter} />
+                </Link>
+
+                <Link to="/breathe">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            Breathe
+                        </h3>
+                    </div>
+                    <Route exact path="/breathe" component={Breathe} />
+                </Link>
+
+               
+                <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">
+                    <h3 className="main-directory-link">
+                        Whack-A-Hacker
+                    </h3>
+                </a>
+                
+
+                <Link to="/ventbox">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            ventbox
+                        </h3>
+                    </div>
                 <Route exact path="/ventbox" component={Ventbox} />
+                </Link>
 
-                <Link to="/matter">Will It Matter?</Link>
-                <Route exact path="/matter" component={Matter} />
-
-                <Link to="/breathe">Breathe</Link>
-                <Route exact path="/breathe" component={Breathe} />
-
-                <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">Whack-A-Hacker</a>
-
-                <Link to="/ventbox">ventbox</Link>
-                <Route exact path="/ventbox" component={Ventbox} />
-
-                <Link to="/squarespace">Squarespace</Link>
+                <Link to="/squarespace">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            Squarespace
+                        </h3>
+                    </div>
                 <Route exact path="/squarespace" component={Squarespace} />
+                </Link>
 
-                <Link to="/racingmind">Racing mind</Link>
+                <Link to="/racingmind">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            Racing mind
+                        </h3>
+                    </div>
                 <Route exact path="/racingmind" component={Racingmind} />
-                <Link to="/accomplishments">Accomplishments</Link>
+                </Link>
+
+                <Link to="/accomplishments">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link">
+                            Accomplishments
+                        </h3>
+                    </div>
                 <Route exact path="/accomplishments" component={Accomplishments} />
+                </Link>
+                </div>
                 <Homepage />
             </div>
         )

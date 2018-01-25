@@ -19,24 +19,37 @@ export default class AnxietyPage extends React.Component {
         return (
                 <div className="anxiety-page-container">
                     <Header />
-                    <Link to="/ventbox">ventbox</Link>
-                    <Route exact path="/ventbox" component={Ventbox} />
+                    <div className="main-container">
+                    <Link to="/ventbox">
+                    <div className="main-directory-box">
+                        <h3 className="main-directory-link"> 
+                        ventbox
+                        </h3>
+                        <Route exact path="/ventbox" component={Ventbox} />
+                    </div>
+                    </Link>
 
-                    <Link to="/squarespace">Squarespace</Link>
-                    <Route exact path="/squarespace" component={Squarespace} />
+                    <Link to="/squarespace">
+                    <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        Squarespace
+                        </h3>
+                        <Route exact path="/squarespace" component={Squarespace} />
+                        </div>
+                    </Link>
 
-                    <Link to="/racingmind">Racing mind</Link>
-                    <Route exact path="/racingmind" component={Racingmind} />
+                    <Link to="/racingmind">
+                        <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        Racing mind
+                        </h3>
+                        <Route exact path="/racingmind" component={Racingmind} />
+                        </div>
+                    </Link>
+                    </div>
                     <Homepage />
                 </div>
         )
     }
 }
 
-const Square =(title)=>{
-    return (
-        <div className="anxiety-block block">
-            <p>{title}</p>
-        </div>
-    )
-}

@@ -16,7 +16,6 @@ export default class Affirmation extends React.Component {
             this.setState({
                 quotes: results
             })
-            console.log(this.state.quotes)
         }))
     }
     render(){
@@ -28,7 +27,7 @@ export default class Affirmation extends React.Component {
                 <div className="affirmation-words">
                     {this.state.quotes.map(res=>{
                         return (
-                            <p>{res.quote}</p>
+                            <p key={res.id}>"{res.quote}" - {res.author}</p>
                         )
                     })}
                 </div>

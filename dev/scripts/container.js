@@ -16,18 +16,35 @@ export default class Container extends React.Component {
     }
     render(){
         return (
-                <div>
-                    <Link to="/anxiety"><h3>Anxiety</h3></Link>
-                    <Route exact path="/anxiety" component={AnxietyPage} />
+                <div className="main-container">
+                    <Link to="/anxiety">
+                        <div className="main-directory-box">
+                            <h3 className="main-directory-link">Anxiety</h3>
+                            <Route exact path="/anxiety" component={AnxietyPage} />
+                        </div>
+                    </Link>
+                    
+                    <Link to="/anger">
+                        <div className="main-directory-box">
+                            <h3 className="main-directory-link">Anger</h3>
+                            <Route exact path="/anger" component={AngerPage} />
+                        </div>
+                    </Link>
 
-                    <Link to="/anger"><h3>Anger</h3></Link>
-                    <Route exact path="/anger" component={AngerPage} />
+                    <Link to="/undescribeable"> 
+                        <div className="main-directory-box">
+                        <h3
+                            className="main-directory-link">undescribeable</h3>
+                            <Route exact path="/undescribeable" component={Undescribeable} />
+                        </div>
+                    </Link>
 
-                    <Link to="/undescribeable"><h3>undescribeable</h3></Link>
-                    <Route exact path="/undescribeable" component={Undescribeable} />
-
-                    <Link to="/depression">Depression</Link>
-                    <Route exact path="/depression" component={Depression} />
+                    <Link to="/depression">
+                        <div className="main-directory-box">
+                        <h3 className="main-directory-link">Depression</h3>
+                            <Route exact path="/depression" component={Depression} />
+                        </div>
+                    </Link>
                 </div>
         )
     }
