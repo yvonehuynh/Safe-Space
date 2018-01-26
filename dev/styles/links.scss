@@ -25,6 +25,24 @@
         width: 22%;
         height: 150px;
         display: inline-block;
-        color: purple;
+        margin: 10px;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            color: purple;
+            text-align: center;
+        }
+    }
+}
+
+.main-container.video {
+    .main-directory-box {
+        width: 45%;
+        margin: 10px;
+    }
+    a {
+        width: 100%;
     }
 }

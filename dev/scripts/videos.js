@@ -13,6 +13,7 @@ export default class Videos extends React.Component {
         return (
             <div className="video-container">
                 <Header />
+                <h2>Videos</h2>
                 <div className="main-container video">
                     <div className="main-directory-box">
                         <Link to="/dogs"><h3 className="main-directory-link">I am a dog person</h3></Link>

@@ -8,7 +8,8 @@ export default class Squarespace extends React.Component {
         this.changeColour = this.changeColour.bind(this)
     }
     changeColour(e){
-        e.target.style.backgroundColor = "red";
+        e.target.style.backgroundColor = "white";
+        e.target.innerHTML = "breathe";
     }
     render(){
         return (
@@ -16,6 +17,8 @@ export default class Squarespace extends React.Component {
             <Header />
                 <p>Click on each white square to turn it red.</p>
                 <div className="mini-square-container">
+                    <div className="mini-square" onClick={this.changeColour}></div>
+                    <div className="mini-square" onClick={this.changeColour}></div>
                     <div className="mini-square" onClick={this.changeColour}></div>
                     <div className="mini-square" onClick={this.changeColour}></div>
                     <div className="mini-square" onClick={this.changeColour}></div>

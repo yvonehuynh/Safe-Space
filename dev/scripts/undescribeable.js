@@ -8,6 +8,7 @@ import Breathe from "./breathe";
 import Homepage from "./homepage-button";
 import Header from "./header";
 import Accomplishments from "./accomplishments";
+import Videos from "./videos";
 
 import {
     BrowserRouter as Router,
@@ -23,7 +24,7 @@ export default class Undescribeable extends React.Component {
                 <Link to="/ventbox">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link">
-                            ventbox
+                            Ventbox
                         </h3>
                     </div>
                     <Route exact path="/ventbox" component={Ventbox} />
@@ -55,13 +56,13 @@ export default class Undescribeable extends React.Component {
                 </a>
                 
 
-                <Link to="/ventbox">
+                <Link to="/videos">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link">
-                            ventbox
+                            Videos
                         </h3>
                     </div>
-                <Route exact path="/ventbox" component={Ventbox} />
+                    <Route exact path="/videos" component={Videos} />
                 </Link>
 
                 <Link to="/squarespace">

@@ -23,7 +23,7 @@ export default class AnxietyPage extends React.Component {
                     <Link to="/ventbox">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link"> 
-                        ventbox
+                        Ventbox
                         </h3>
                         <Route exact path="/ventbox" component={Ventbox} />
                     </div>
