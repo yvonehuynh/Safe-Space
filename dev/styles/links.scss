@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid blue;
     .main-directory-box {
         border:px solid black;
         width: 100%;
@@ -12,18 +11,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background: white;
         .main-directory-link {
             display: inline-block;
-            background: peachpuff;
+            color: purple;
         }
     }
 }
 
 .main-container {
     a {
+        text-decoration: none;
         width: 22%;
         height: 150px;
         display: inline-block;
-        border: 1px solid red;
+        color: purple;
     }
 }

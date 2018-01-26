@@ -34,7 +34,7 @@ export default class Container extends React.Component {
                     <Link to="/undescribeable"> 
                         <div className="main-directory-box">
                         <h3
-                            className="main-directory-link">undescribeable</h3>
+                            className="main-directory-link">Can't Explain The Feeling</h3>
                             <Route exact path="/undescribeable" component={Undescribeable} />
                         </div>
                     </Link>

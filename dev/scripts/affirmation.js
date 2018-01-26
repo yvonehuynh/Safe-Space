@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import Homepage from "./homepage-button";
 
 export default class Affirmation extends React.Component {
     constructor(){
@@ -31,6 +32,7 @@ export default class Affirmation extends React.Component {
                         )
                     })}
                 </div>
+                <Homepage />
             </div>
         )
     }

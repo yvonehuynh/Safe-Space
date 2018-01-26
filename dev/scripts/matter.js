@@ -1,5 +1,12 @@
 import React from "react";
 import Homepage from "./homepage-button";
+import Header from "./header";
+import Ventbox from "./ventbox";
+import Breathe from "./breathe";
+import {
+    BrowserRouter as Router,
+    Route, Link
+} from 'react-router-dom';
 
 export default class Matter extends React.Component {
     constructor(){
@@ -31,6 +38,7 @@ export default class Matter extends React.Component {
     render(){
         return (
             <div className="matter-container">
+                <Header />
                 <form action="" onSubmit={this.evaluateScore}>
                     <fieldset>
                         <p>Will it matter tomorrow?</p>
@@ -68,11 +76,64 @@ export default class Matter extends React.Component {
                         <input type="radio" name="year" value="0" id="year-no"/>
                     </fieldset>
                     <input type="submit"/>
-                    {this.state.veryAngry ? <p>You have every right to feel angry!</p> : null}
-                    {this.state.slightlyAngry ? <p>You'll be okay. Just vent it out and you'll be fine.</p> : null}
+
+                    {this.state.veryAngry ? 
+                    <div className="matter-quote">
+                        <p >You have every right to feel angry!</p>
+                        {veryAngry()}
+                        </div>
+                    : null}
+
+                    {this.state.slightlyAngry ? 
+                    <div className="matter-quote">
+                        <p>You'll be okay. Just vent it out and you'll be fine.</p>
+                        {SlightlyAngry()}
+                    </div>
+                     : null}
                 </form>
                 <Homepage />
             </div>
         )
     }
+}
+
+const veryAngry=()=>{
+    return (
+        <div>
+            <p>may we suggest these activities to help you chill out?</p>
+            <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        Whack-A-Hacker
+                    </h3>
+                </div>
+            </a>
+
+            <Link to="/ventbox">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        ventbox
+                    </h3>
+                </div>
+                <Route exact path="/ventbox" component={Ventbox} />
+            </Link>
+        </div>
+    )
+}
+
+const SlightlyAngry=()=>{
+    return (
+        <div>
+            <p>May we suggest these activites to distract you?</p>
+            <Link to="/breathe">
+                <div className="main-directory-box">
+                    <h3 className="main-directory-link">
+                        Breathe
+                    </h3>
+                </div>
+                <Route exact path="/breathe" component={Breathe} />
+            </Link>
+            <a href="https://www.youtube.com/results?search_query=cats+and+cucumbers" target="_blank"><h3 className="main-directory-link">Cats and Cucumbers</h3></a>
+        </div>
+    )
 }

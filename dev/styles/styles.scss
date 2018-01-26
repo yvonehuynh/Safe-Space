@@ -4,8 +4,50 @@
 @import "anxiety";
 @import "animation";
 @import "links";
+@import "ventbox";
+@import "matter";
+
+html {
+    font-size: 62.5%;
+    word-spacing: 0.1rem;
+}
+
+body {
+    background: rgb(89, 20, 153);
+    background: linear-gradient(purple, mediumpurple);
+    height: 100vh;
+}
 
 img {
     max-width: 100%;
 }
 
+#app {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+}
+
+h3 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+p {
+    color: white;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}

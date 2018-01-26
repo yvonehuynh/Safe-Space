@@ -43,13 +43,13 @@ export default class AngerPage extends React.Component {
                 </div> 
             <Route exact path="/breathe" component={Breathe} />
             </Link>
-            <div className="main-directory-box">
                 <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">
+                <div className="main-directory-box">
                     <h3 className="main-directory-link">
                         Whack-A-Hacker
                     </h3>
+                </div>
                 </a>
-            </div>
             </div>
             <Homepage />
             </div>

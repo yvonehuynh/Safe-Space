@@ -2,6 +2,7 @@ import React from "react";
 import Dogs from "./dogs";
 import Cats from "./cats";
 import Homepage from "./homepage-button";
+import Header from "./header";
 import {
     BrowserRouter as Router,
     Route, Link
@@ -11,12 +12,17 @@ export default class Videos extends React.Component {
     render(){
         return (
             <div className="video-container">
-                <Link to="/dogs">I am a dog person</Link>
-                <Route exact path="/dogs" component={Dogs} />
-
-                <Link to="/cats">I am a cat person</Link>
-                <Route exact path="/cats" component={Cats} />
-
+                <Header />
+                <div className="main-container video">
+                    <div className="main-directory-box">
+                        <Link to="/dogs"><h3 className="main-directory-link">I am a dog person</h3></Link>
+                        <Route exact path="/dogs" component={Dogs} />
+                    </div>
+                    <div className="main-directory-box">
+                        <Link to="/cats"><h3 className="main-directory-link">I am a cat person</h3></Link>
+                        <Route exact path="/cats" component={Cats} />
+                    </div>
+                </div>
                 <Homepage />
             </div>
         )
