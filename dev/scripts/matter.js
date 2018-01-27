@@ -40,6 +40,8 @@ export default class Matter extends React.Component {
             <div className="matter-container">
                 <Header />
                 <form action="" onSubmit={this.evaluateScore}>
+                    <p>Use this form to get some words of affirmation. As you go through each question, think about if it will really matter.</p>
+                    <p>You can lie to yourself but you can't lie to a computer.</p>
                     <fieldset>
                         <p>Will it matter tomorrow?</p>
                         <label htmlFor="tomorrow-yes">Yes</label>

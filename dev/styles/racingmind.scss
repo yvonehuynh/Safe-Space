@@ -1,0 +1,20 @@
+.racing-mind-flex-container {
+    display: flex;
+    justify-content: space-between;
+    .racing-mind-description, .input-container {
+        width: 45%;
+    }
+}
+
+.racing-mind-container {
+    ol {
+        color: white;
+        padding: 0;
+    }
+    input {
+        width: 100%;
+    }
+    li {
+        margin: 10px;
+    }
+}
