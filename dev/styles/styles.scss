@@ -8,6 +8,8 @@
 @import "matter";
 @import "squarespace";
 @import "racingmind";
+@import "accomplishments";
+@import "affirmation";
 
 html {
     font-size: 62.5%;
@@ -48,9 +50,14 @@ h3 {
 p {
     color: white;
     font-size: 1.6rem;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+ol {
+    color: white;
+    font-size: 1.6rem;
+}

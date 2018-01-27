@@ -1,0 +1,14 @@
+.affirmation-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    .affirmation-words {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 3rem;
+        }
+    }
+}

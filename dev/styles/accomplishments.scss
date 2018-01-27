@@ -1,0 +1,24 @@
+.accomplishment-flex-container {
+    display: flex;
+    justify-content: space-between;
+    .form-container, .accomplishment-description {
+        width: 45%;
+    }
+}
+
+.form-container {
+    form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    ol {
+        padding: 0;
+    }
+    li {
+        margin: 10px;
+    }
+    input[type=text] {
+        width: 100%;
+    }
+}
