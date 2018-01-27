@@ -5,6 +5,7 @@ export default class Popup extends React.Component {
     render(){
         return (
             <div className="popup-container">
+            <h1>Safe Space</h1>
                 <p>Safe Space helps everyone express themselves, safely.
             If you are angry, sad, having anxiety, lonely, or feeling some undescribeable emotions, Safe Space is here to help you and your mind chill out.
 

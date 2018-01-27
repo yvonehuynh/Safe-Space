@@ -6,12 +6,16 @@ export default class Accomplishments extends React.Component {
     constructor(){
         super();
         this.state={
-            accomplishments: ""
+            accomplishments: "",
+            proudQuote: false
         }
         this.congrats = this.congrats.bind(this)
     }
     congrats(){
         this.accomplishments.value= ""
+        this.setState({
+            proudQuote: true
+        })
     }
     render(){
         return (
@@ -33,7 +37,7 @@ export default class Accomplishments extends React.Component {
                                 <li><input type="text" name="accomplishments" ref={ref => this.accomplishments = ref}/></li>
                             </ol>
                         </form>
-                        <button onClick={this.congrats}>I am proud of myself!</button>
+                        
                     </div>
 
                     <div className="accomplishment-description">
@@ -53,6 +57,10 @@ export default class Accomplishments extends React.Component {
                         </ol>
                     </div>
                 </div>
+                <div className="proud-quote">
+                    {this.state.proudQuote ? <h3>You did an amazing job!</h3> : null}
+                </div>
+                <button onClick={this.congrats}>I am proud!</button>
                 <Homepage />
             </div>
         )

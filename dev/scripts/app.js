@@ -15,6 +15,7 @@ import Videos from "./videos";
 import Dogs from "./dogs";
 import Cats from "./cats";
 import Affirmation from "./affirmation";
+import Modal from "react-modal";
 
 import {
   BrowserRouter as Router,
@@ -47,4 +48,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'), Modal.setAppElement("#app"));
