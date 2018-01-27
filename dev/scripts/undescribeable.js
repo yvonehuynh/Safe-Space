@@ -20,6 +20,7 @@ export default class Undescribeable extends React.Component {
         return (
             <div className="undescriabeable-container">
                 <Header />
+                <p className="description">Don't know what you're feeling? That's okay</p>
                 <div className="main-container">
                 <Link to="/ventbox">
                     <div className="main-directory-box">

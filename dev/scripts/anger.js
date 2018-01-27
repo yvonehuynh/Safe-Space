@@ -14,13 +14,13 @@ export default class AngerPage extends React.Component {
         return (
             <div className="anger-container">
             <Header />
-            <p>Choose which activity you would like to calm your anger</p>
+            <p className="description">Choose which activity you would like to calm your anger</p>
                 
             <div className="main-container">
             <Link to="/ventbox">
                 <div className="main-directory-box">
                     <h3 className="main-directory-link">
-                        ventbox
+                        Ventbox
                     </h3>
                 </div>
             <Route exact path="/ventbox" component={Ventbox} />

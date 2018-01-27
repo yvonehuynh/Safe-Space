@@ -106,3 +106,17 @@ button:active, button:hover {
     background: purple;
     border: 1px solid purple;
 }
+
+.modal-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: wheat;
+    cursor: pointer;
+}
+
+.landingpage {
+    p {
+        text-align: center;
+    }
+}

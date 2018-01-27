@@ -59,9 +59,10 @@ export default class LandingPage extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="landingpage">
                 <Header />
-                <p onClick={this.openModal}>Click here to learn more about Safe Space</p>
+                <p onClick={this.openModal}>Click <span className="modal-link">here</span> to learn more about Safe Space</p>
+
                 <Container />
                 <Modal
                     isOpen={this.state.modalIsOpen}

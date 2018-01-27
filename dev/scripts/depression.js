@@ -14,6 +14,7 @@ export default class Depression extends React.Component {
         return (
             <div>
             <Header />
+                <p className="description">Let's do something to make your day a little better</p>
             <div className="main-container">
                 <Link to="/accomplishments">
                     <div className="main-directory-box">

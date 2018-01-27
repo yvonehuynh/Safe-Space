@@ -19,6 +19,7 @@ export default class AnxietyPage extends React.Component {
         return (
                 <div className="anxiety-page-container">
                     <Header />
+                <p className="description">Choose an activity to distract you from your anxiety</p>
                     <div className="main-container">
                     <Link to="/ventbox">
                     <div className="main-directory-box">
