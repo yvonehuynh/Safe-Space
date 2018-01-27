@@ -51,8 +51,10 @@ export default class Squarespace extends React.Component {
                     <div className="mini-square" onClick={this.changeColour}></div>
                     <div className="mini-square" onClick={this.changeColour}></div>
                 </div>
-                <Homepage />
-                <button onClick={this.resetPage}>Rest</button>
+                <div className="button-flex">
+                    <Homepage />
+                    <button onClick={this.resetPage}>Rest</button>
+                </div>
             </div>
         )
     }

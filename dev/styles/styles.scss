@@ -18,7 +18,7 @@ html {
 
 body {
     background: rgb(89, 20, 153);
-    background: linear-gradient(purple, mediumpurple);
+    background: linear-gradient(purple, mediumpurple) no-repeat center center fixed;
     height: 100vh;
 }
 
@@ -50,11 +50,11 @@ h3 {
 p {
     color: white;
     font-size: 1.6rem;
-    margin: 0;
 }
 
 a {
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 ol {

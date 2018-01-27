@@ -50,12 +50,13 @@ export default class Undescribeable extends React.Component {
 
                
                 <a href="http://yvonecodesit.ca/whackahacker/index.html" target="_blank">
+                <div className="main-directory-box">
                     <h3 className="main-directory-link">
                         Whack-A-Hacker
                     </h3>
+                </div>
                 </a>
                 
-
                 <Link to="/videos">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link">

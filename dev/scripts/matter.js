@@ -77,7 +77,7 @@ export default class Matter extends React.Component {
                         <label htmlFor="year-no">No</label>
                         <input type="radio" name="year" value="0" id="year-no"/>
                     </fieldset>
-                    <input type="submit"/>
+                    <button>Submit</button>
 
                     {this.state.veryAngry ? 
                     <div className="matter-quote">
