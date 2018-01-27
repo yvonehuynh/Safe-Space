@@ -1,0 +1,40 @@
+@media only screen and (max-width: 900px) {
+    // buttons
+    .form-container {
+        button {
+            width: 64%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    // anxiety
+    .main-container {
+        justify-content: space-around;
+        .main-directory-box {
+            .main-directory-link {
+                font-size: 2rem;
+            }
+        }
+        a {
+            width: 27%;
+        }
+    }
+    // landing page
+}
+
+@media only screen and (max-width: 700px) {
+    // ventbox
+    .ventbox-flex-container {
+        flex-direction: column-reverse;
+        .form-container {
+            width: 100%;
+        }
+        .ventbox-description {
+            width: 100%;
+        }
+    }
+    
+
+}
