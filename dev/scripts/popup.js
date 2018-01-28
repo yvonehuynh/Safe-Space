@@ -9,7 +9,7 @@ export default class Popup extends React.Component {
                 <h3 className="modal-title-description">About</h3>
 
                 <p>Safe Space helps everyone express themselves, safely.
-            If you are angry, sad, having anxiety, lonely, or feeling some undescribeable emotions, Safe Space is here to help you and your mind chill out.
+            If you are angry, sad, having anxiety, or feeling some undescribeable emotions, Safe Space is here to help you and your mind chill out.
                 </p>
 
                 <h3 className="modal-title-description">Vision Behind Safe Space</h3>

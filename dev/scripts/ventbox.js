@@ -30,7 +30,7 @@ export default class Ventbox extends React.Component {
                 <div className="ventbox-flex-container">
                     <div className="form-container">
                         <form action="" onSubmit={this.formSubmit}>
-                            <textarea name="ventbox" value={this.state.ventbox} onChange={this.valueChange} autocomplete="off" placeholder="Go on, vent. We're here to listen."/>
+                            <textarea name="ventbox" value={this.state.ventbox} onChange={this.valueChange} placeholder="Go on, vent. We're here to listen."/>
                             <button>Clear Your Mind</button>
                         </form>
                     </div>
