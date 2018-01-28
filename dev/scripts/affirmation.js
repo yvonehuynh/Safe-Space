@@ -12,13 +12,21 @@ export default class Affirmation extends React.Component {
         this.getWords = this.getWords.bind(this)
     }
     getWords(){
-        axios.get("https://quotes.rest/qod.json?category=funny ")
-        .then((res=>{
-            const results = res.data.contents.quotes
-            this.setState({
-                quotes: results
-            })
-        }))
+        axios({
+            method: 'GET',
+            url: 'https://proxy.hackeryou.com',
+            dataResponse: 'json',
+            params: {
+                reqUrl: '"https://quotes.rest/qod.json?category=funny"',
+                proxyHeaders: {
+                    'header_params': 'value'
+                },
+                xmlToJSON: false
+            }.then((res => {
+                const results = res.data.contents.quotes
+                this.setState({
+                    quotes: results
+                })
     }
     render(){
         return (
