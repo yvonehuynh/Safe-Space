@@ -2,6 +2,7 @@
             If you are angry, sad, having anxiety, or feeling some undescribeable emotions, Safe Space is here to help you and your mind chill out.
  
 
+<<<<<<< HEAD
                 Vision Behind Safe Space
                 Safe Space was created to allow all users to express themselves in a safe environment.
 
@@ -13,3 +14,8 @@
 
                 Close this window to explore the different options.
            
+=======
+1. `git clone` this repo
+2. `npm install`
+3. enjoy!
+>>>>>>> 67a339a3f460c42ee2676dda845b40c883368f34
