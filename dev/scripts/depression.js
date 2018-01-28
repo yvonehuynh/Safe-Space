@@ -2,7 +2,7 @@ import React from "react";
 import Accomplishments from "./accomplishments";
 import Videos from "./videos";
 import Homepage from "./homepage-button";
-import Affirmation from "./affirmation";
+//import Affirmation from "./affirmation";
 import Header from "./header";
 import {
     BrowserRouter as Router,
@@ -15,7 +15,7 @@ export default class Depression extends React.Component {
             <div>
             <Header />
                 <p className="description">Let's do something to make your day a little better</p>
-            <div className="main-container">
+            <div className="main-container depression">
                 <Link to="/accomplishments">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link">
@@ -34,14 +34,14 @@ export default class Depression extends React.Component {
                     <Route exact path="/videos" component={Videos} />
                 </Link>
 
-                <Link to="/quotes">
+                {/* <Link to="/quotes">
                     <div className="main-directory-box">
                         <h3 className="main-directory-link">
                             Quote of the Day to Make Your Day
                         </h3>
                     </div>
                     <Route exact path="/quotes" component={Affirmation} />
-                </Link>
+                </Link> */}
             </div>
             <Homepage />
             </div>

@@ -22,13 +22,13 @@ export default class Affirmation extends React.Component {
                     'header_params': 'value'
                 },
                 xmlToJSON: false
-            }.then((res => {
+            }.then(function (res) {
                 const results = res.data.contents.quotes
                 this.setState({
                     quotes: results
                 })
             }
-            ))})
+            )})
     }
     render(){
         return (
