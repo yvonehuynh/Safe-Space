@@ -19,7 +19,7 @@ export default class Popup extends React.Component {
 
                 <p>This application was inspired by Calm Harm; a mobile app that helps those who self-harm distract themselves from the urge. Safe Space is an extension of that, but for all users who are just going through something rough and need to vent it out. </p>
 
-                <p>Safe Space is anonymous. We do not save your data, info, or activity records. No one will know what you are thining. This is your Safe Space.</p>
+                <p>Safe Space is anonymous. We do not save your data, info, or activity records. No one will know what you are thinking. This is your Safe Space.</p>
 
                 <p>Close this window to explore the different options.</p>
             </div>
