@@ -28,13 +28,97 @@
     // ventbox
     .ventbox-flex-container {
         flex-direction: column-reverse;
-        .form-container {
+        .form-container, .ventbox-description {
             width: 100%;
         }
-        .ventbox-description {
+        .form-container {   
+            height: 300px;
+            margin-top: 10px;
+        }
+    }
+
+    // square space
+    ol {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+        .main-container {
+        .main-directory-box {
+            .main-directory-link {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    .main-container{
+        a {
+            width: 45%;
+        }
+    }
+
+    // Racing mind
+    .racing-mind-flex-container {
+        flex-direction: column-reverse;
+        .racing-mind-description, .racing-mind-flex-container, .input-container {
             width: 100%;
         }
     }
-    
 
+    // accomplishments
+    .accomplishment-flex-container {
+        flex-direction: column-reverse;
+        .form-container, .accomplishment-flex-container, .accomplishment-description {
+            width: 100%;
+        }
+    }
+
+    // squarespace
+    .mini-square-container {
+        .mini-square {
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .main-container {
+        a {
+        width: 70%;
+    }
+}
+    // breathe box
+
+    .breathe-box-container {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    // videos
+    .main-container.video {
+        .main-directory-box {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    // breathe box
+    .breathe-box-container {
+        width: 30vh;
+        height: 30vh;
+    }
 }
