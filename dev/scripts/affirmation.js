@@ -12,7 +12,7 @@ export default class Affirmation extends React.Component {
         this.getWords = this.getWords.bind(this)
     }
     getWords(){
-        axios.get("http://quotes.rest/qod.json?category=funny ")
+        axios.get("https://quotes.rest/qod.json?category=funny ")
         .then((res=>{
             const results = res.data.contents.quotes
             this.setState({
