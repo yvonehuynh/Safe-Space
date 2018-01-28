@@ -27,6 +27,8 @@ export default class Affirmation extends React.Component {
                 this.setState({
                     quotes: results
                 })
+            }
+            ))})
     }
     render(){
         return (
